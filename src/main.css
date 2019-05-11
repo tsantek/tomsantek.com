@@ -20,6 +20,9 @@ body {
 }
 
 
+/* NAV STOP COLAPESE */
+
+
 /* HEADER */
 
 header {
@@ -95,6 +98,10 @@ header {
     flex-direction: row;
 }
 
+.page-two-container img {
+    width: 100%;
+}
+
 
 /*  PAGE 3 */
 
@@ -127,5 +134,12 @@ header {
 /* PAGE 5 */
 
 .contact-me-page-header {
+    text-align: center;
+}
+
+
+/* MEDIA SCREEN */
+
+.main-page-intro-mobile .hello-text {
     text-align: center;
 }
