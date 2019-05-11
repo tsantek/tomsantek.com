@@ -1,9 +1,14 @@
 /* BODY */
 
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 body {
     height: 100%;
     width: 100%;
+    position: relative;
 }
 
 .home-page {
@@ -90,7 +95,10 @@ header {
     flex-direction: row;
 }
 
-#portfolio h3 {
+
+/*  PAGE 3 */
+
+.portfolio h3 {
     text-align: center;
     padding-bottom: 10px;
 }
@@ -100,7 +108,23 @@ header {
 }
 
 
-/*  PAGE 3 */
+/* PAGE 4 */
+
+.blog h3 {
+    text-align: center;
+}
+
+.blog .card-body {
+    background-image: url("./img/images.jpeg");
+    color: white;
+}
+
+.blog-card-title {
+    padding-top: 35px;
+}
+
+
+/* PAGE 5 */
 
 .contact-me-page-header {
     text-align: center;

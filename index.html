@@ -15,17 +15,23 @@
     <title>Tom Santek - Front End Developer</title>
 </head>
 
-<body>
+<script>
+    ('body').scrollspy({
+        target: '#navbar-example'
+    })
+</script>
+
+<body data-spy="scroll" data-target="#navbar-example">
     <!-- PAGE 1 -->
     <div class="container home-page" id="home">
-        <header class="d-flex justify-content-center fixed-top">
+        <header class="d-flex justify-content-center fixed-top" id="navbar-example">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
@@ -33,6 +39,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
@@ -58,29 +67,27 @@
                     <h3>Tom Santek</h3>
                     <p>Front End Developer</p>
                     <p>Based in Phoenix, Arizona</p>
-                    <a href="#" class="contact-button">Contact me</a>
+                    <a href="#contact" class="contact-button">Contact me</a>
                 </div>
                 <div class="col hello-picture">
                     <div class="image-page-one"></div>
                 </div>
             </div>
+
+            <div id="about"></div>
         </div>
-
-
-
-
     </div>
 
 
     <!-- PAGE 2 -->
 
-
-    <div class="container page" id="about">
+    <div class="container page">
         <div class="row page-two-container">
             <div class="col"><img src="src/img/ab-img.png" alt="computer guy img"></div>
             <div class="col">
                 <h3>About me:</h3>
                 <p>Hello, I’m a Tom, web-developer based in Phoenix, Arizona, US.</p>
+                <p> I am passionate about building excellent software that improves the lives of those around me. I specialize in building applications specific to the business needs of my clients. I have done work in front-end and back-end web development.</p>
                 <p>I have rich experience in:</p>
                 <div class="programming-languages">
                     <div class="row class-test">
@@ -105,11 +112,13 @@
                 </div>
             </div>
         </div>
+
+        <div id="portfolio"></div>
     </div>
 
     <!-- PAGE 3 -->
 
-    <div class="container page" id="portfolio">
+    <div class="container page portfolio">
         <h3>Projects</h3>
         <div class="row ">
             <div class="col-4 d-flex justify-content-center">
@@ -144,9 +153,32 @@
             </div>
         </div>
 
+        <div id="blog"></div>
     </div>
 
     <!-- PAGE 4 -->
+
+    <div class="container page blog">
+        <h3>Blog</h3>
+        <div class="card text-center">
+            <div class="card-header">
+                Last blog post
+            </div>
+            <div class="card-body">
+                <h5 class="card-title blog-card-title">Learn to learn before you start learning programming</h5>
+                <p class="card-text">Learn to learn before you start learning programming.</p>
+                <a href="https://medium.com/@santek.vg/learn-to-learn-before-you-start-learning-programming-863c112bb07f" class="btn btn-primary">Read blog post...</a>
+            </div>
+            <div class="card-footer text-muted">
+                12 days ago
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <!--  PAGE 5 -->
 
     <div class="container page" id="contact">
         <h3 class="contact-me-page-header">Contact</h3>
