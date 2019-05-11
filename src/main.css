@@ -1,0 +1,107 @@
+/* BODY */
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.home-page {
+    height: 100vh;
+}
+
+.page {
+    height: 80vh;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: rgba(255, 254, 254, 0.9)
+}
+
+
+/* PAGE 1 */
+
+.align-page-center {
+    height: 80vh;
+}
+
+.hello-text {
+    margin-right: 25px;
+    text-align: right;
+}
+
+.hello-picture {
+    text-align: left
+}
+
+.image-page-one {
+    background-color: white;
+    border-radius: 200px;
+    height: 200px;
+    height: 200px;
+    margin-left: 25px;
+    width: 200px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    background-image: url("./img/imghomeTom.jpg");
+    background-position: center;
+    background-size: 210px;
+}
+
+.image-page-one::after {
+    position: absolute;
+    top: -9px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: rgba(233, 228, 228, 0.6);
+    content: '';
+    border-radius: 200px;
+    width: 220px;
+    height: 220px;
+    margin-left: 29px;
+    z-index: -1;
+}
+
+
+/* PAGE 2 */
+
+.page-two-container {
+    height: 50vh;
+}
+
+.prog-lan-item {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 2px;
+    max-width: 250px;
+}
+
+.jquery-list {
+    max-width: 150px;
+}
+
+.class-test {
+    display: flex;
+    flex-direction: row;
+}
+
+#portfolio h3 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.card {
+    height: 350px;
+}
+
+
+/*  PAGE 3 */
+
+.contact-me-page-header {
+    text-align: center;
+}
