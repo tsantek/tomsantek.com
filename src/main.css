@@ -212,3 +212,17 @@ header {
         padding-top: 100px;
     }
 }
+
+
+/*  ARROW */
+
+.arrow {
+    height: 50px;
+    width: 50px;
+    background-image: url("./img/arrow.png");
+    background-size: 50px;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    right: 47.5%;
+}
