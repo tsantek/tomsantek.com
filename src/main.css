@@ -140,6 +140,56 @@ header {
 
 /* MEDIA SCREEN */
 
+
+/* PAGE 1 */
+
+.main-page-intro-mobile {
+    padding: 20px 0 150px 0;
+}
+
 .main-page-intro-mobile .hello-text {
     text-align: center;
+}
+
+.main-page-intro-mobile .image-page-one {
+    margin: 60px 0 0 0;
+}
+
+.main-page-intro-mobile .image-page-one::after {
+    background-color: white;
+}
+
+
+/* MEDIA SCREEN FOR MAX 770px */
+
+@media screen and (max-width: 767x) {
+    .page {
+        height: unset;
+    }
+    .page-two-container {
+        height: 100%;
+    }
+    .portfolio {
+        height: 100%;
+    }
+}
+
+
+/* MEDIA SCREEN FOR MAX 576px */
+
+@media screen and (max-width: 576px) {
+    /*  PAGE 2 */
+    .card {
+        margin-bottom: 50px;
+    }
+    .page-two-container {
+        height: 100%;
+    }
+    /*  PAGE 3 */
+    .page {
+        height: unset;
+    }
+    .portfolio h3 {
+        padding-top: 100px;
+    }
 }
