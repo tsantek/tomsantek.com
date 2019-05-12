@@ -30,7 +30,7 @@ header {
 }
 
 
-/* PAGE 1 */
+/* PAGE 1 - HOME */
 
 .align-page-center {
     height: 80vh;
@@ -39,6 +39,11 @@ header {
 .hello-text {
     margin-right: 25px;
     text-align: right;
+}
+
+.hello-text p:nth-child(1),
+.hello-text p:nth-child(3) {
+    margin: 0;
 }
 
 .hello-picture {
@@ -75,7 +80,7 @@ header {
 }
 
 
-/* PAGE 2 */
+/* PAGE 2 - ABOUT */
 
 .page-two-container {
     height: 50vh;
@@ -103,7 +108,7 @@ header {
 }
 
 
-/*  PAGE 3 */
+/*  PAGE 3  PORTFOLIO */
 
 .portfolio h3 {
     text-align: center;
@@ -111,11 +116,15 @@ header {
 }
 
 .card {
-    height: 350px;
+    /* height: 350px; */
+}
+
+.card-img-top {
+    height: 180px;
 }
 
 
-/* PAGE 4 */
+/* PAGE 4 - BLOG */
 
 .blog h3 {
     text-align: center;
@@ -131,7 +140,7 @@ header {
 }
 
 
-/* PAGE 5 */
+/* PAGE 5  - CONTACT*/
 
 .contact-me-page-header {
     text-align: center;
@@ -162,15 +171,25 @@ header {
 
 /* MEDIA SCREEN FOR MAX 770px */
 
-@media screen and (max-width: 767x) {
-    .page {
-        height: unset;
+@media screen and (max-width: 767px) {
+    .card {
+        margin-bottom: 50px;
     }
     .page-two-container {
         height: 100%;
     }
-    .portfolio {
-        height: 100%;
+    /*  PAGE 3 */
+    .page {
+        height: unset;
+    }
+    .portfolio h3 {
+        padding-top: 100px;
+    }
+    .blog {
+        padding-top: 50px;
+    }
+    .contact {
+        padding-top: 50px;
     }
 }
 
