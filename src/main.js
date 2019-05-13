@@ -14,3 +14,13 @@ function daysPassedTwo(dt) {
 }
 
 document.querySelector('#time-of-post-page-two').innerHTML = "Posted " + daysPassedTwo(new Date()) + " days ago";
+
+
+//  jQuery for hiding and showing arrow on scroll
+$(window).scroll(function() {
+    if ($(window).scrollTop() >= 200) {
+        $('.arrow').css('opacity', '0');
+    } else {
+        $('.arrow').css('opacity', '100');
+    }
+});

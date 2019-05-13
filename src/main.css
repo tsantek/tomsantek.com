@@ -230,3 +230,17 @@ header {
     text-align: center;
     right: 47.5%;
 }
+
+.hide {
+    opacity: 0;
+}
+
+.show {
+    color: #FFFFFF;
+    text-align: center;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
