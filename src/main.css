@@ -130,9 +130,13 @@ header {
     text-align: center;
 }
 
-.blog .card-body {
-    background-image: url("./img/images.jpeg");
-    color: white;
+.post-one {
+    color: black;
+}
+
+.post-two {
+    color: black;
+    margin-top: 30px;
 }
 
 .blog-card-title {
